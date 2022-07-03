@@ -32,9 +32,7 @@ class TemplateMessageData implements HasMessageData
             'components' =>[
                 [
                     'type' => 'body',
-                    'parameters' => [
-                        $this->parameters
-                    ]
+                    'parameters' => $this->parameters,
                 ]
             ]
         ]
