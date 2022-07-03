@@ -23,7 +23,7 @@ class TemplateMessageData implements HasMessageData
 
     public function toArray()
     {
-        [
+        return [
             'name' => $this->template,
             'language' => [
                 'code' => 'en',
@@ -35,7 +35,7 @@ class TemplateMessageData implements HasMessageData
                     'parameters' => $this->parameters,
                 ]
             ]
-        ]
+        ];
     }
 
     public function toJson($options = 0)
